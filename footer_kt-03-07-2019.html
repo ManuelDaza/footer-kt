@@ -1,0 +1,555 @@
+<style>
+    body .wrapper .page .footer-container .payment-methods {
+        background: white;
+        padding: 0 !important;
+    }
+
+    body .wrapper .page .footer-container {
+        position: relative;
+        left: 0;
+        right: 0;
+        /* bottom: -260px; */
+        background: #FFF;
+        color: white;
+        z-index: 20;
+        border: none;
+        padding: 0;
+        margin: 2rem 0 0 0;
+    }
+
+    .outer1 {
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .wrapper1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .internal1 {
+        display: inline-block;
+        width: 6%;
+        margin: 0 0.25rem;
+    }
+
+    .internal1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    address.copyright {
+        margin-top: 6px;
+        display: none;
+    }
+
+    .toggle {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .toggle__input:not(checked) {
+        display: none;
+    }
+
+    .toggle__input+label {
+        background-color: #FFF;
+        border-radius: 5px;
+        color: #999;
+        cursor: pointer;
+        padding: 0.5em;
+        text-align: center;
+        width: 12em;
+        border: solid 1px #999;
+        font-size: 0.750rem;
+        margin: 0.5rem auto;
+    }
+
+    .toggle__input+label:before {
+        color: #999;
+        content: "+";
+        font-size: 1em;
+        padding-right: 0.3em;
+        width: 1em;
+    }
+
+    .toggle__input:not(checked)~.toggle__content {
+        display: none;
+    }
+
+    .toggle__input:checked~.toggle__content {
+        display: block;
+    }
+
+    .toggle__input:checked+label:before {
+        content: "\2212";
+    }
+
+    .toggle__input+label .toggle__less,
+    .toggle__input:checked+label .toggle__more {
+        display: none;
+    }
+
+    .toggle__input:checked+label .toggle__less {
+        display: inline;
+    }
+
+    body .wrapper .page .footer-container .legal .legal-text {
+        margin: 0 5%;
+    }
+    body .wrapper .page .footer-container .legal {
+        display: block !important;
+    }
+
+    body .wrapper .page .footer-container .footer .footer-cols &amp;
+    gt;
+    ul &amp;
+    gt;
+
+    li .content-form-subscribe .form-subscribe .terms-and-conditions input {
+        display: block !important;
+        float: left !important;
+    }
+
+    @media screen and (max-width: 520px) {
+        .internal1 {
+            display: inline-block;
+            width: 19%;
+        }
+
+        .outer1 {
+            white-space: nowrap;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+</style>
+<div class="payment-methods">
+    <h4 class="title">Medios de pago aceptados</h4>
+    <div class="outer1">
+        <div class="wrapper1">
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/visa.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/diners.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/american.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/mastercard.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/pse.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/tarjeta_alkosto.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/20_minutos.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/efecty.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/tarjeta_codensa.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/baloto.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/bancolombia.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/banco_de_bogota.png"
+                    alt="" /></div>
+            <div class="internal1"><img
+                    src="https://media.aws.alkosto.com/ymarketingcolcomercio/Alkosto/2019/medios-de-pago/davivienda.png"
+                    alt="" /></div>
+        </div>
+    </div>
+</div>
+<div class="toggle" style="background: #FFF;"><input id="someID" class="toggle__input" type="checkbox"
+        value="selected" /> <label class="toggle__label" for="someID">Ver <span
+            class="toggle__more">m&aacute;s</span><span class="toggle__less">menos</span> legales </label>
+    <div class="toggle__content">
+        <div class="legal"><img class="legal-vigilado-super" title="TUYA S.A."
+                src="{{media url='ALKOSTO/bannerHome/tuya-gris-_3.png'}}" alt="TUYA S.A." width="50" height="100" />
+            <br />
+            <p class="legal-text" style="text-align: justify;">Descuento válido al pagar el valor
+                total de la compra con Tarjeta de Crédito Alkosto. No acumulable con otras ofertas de Tarjeta de Crédito
+                Alkosto. Máximo 2 unidades por cliente. El seguro incluido en las ofertas de celulares es válido por el
+                mes de julio de 2019 y es otorgado por SEGUROS GENERALES SURAMERICANA S.A., TUYA no asume ninguna
+                obligación referente al contrato del seguro mencionado. Aplica para celulares libres marca Samsung,
+                Huawei, Apple, Motorola, L.G., Asus, Alcatel, Kalley, Nokia, Xiaomi, Doppio, Honor. Aplican condiciones
+                del contrato de seguro. Oferta válida en Alkosto y Ktronix, excepto Nariño. Los intereses se liquidarán
+                con la tasa vigente en el momento de la utilización. Tasa vigente del 1 al 30 de junio del 2019:
+                28.94404% E.A. Aprobación de la tarjeta sujeta a análisis de riesgo por parte de Compañía de
+                Financiamiento TUYA S.A. emisor de la Tarjeta de Crédito Alkosto.</p>
+        </div>
+
+        <div class="legal">
+            <div style="margin: 0px 5%; text-align: justify;"><span> <span style="font-weight: bold">Legal:</span> Oferta valida del 01 al 31
+                    de julio de 2019,
+                    aplica para Cam GoPro HERO7 Black "Ng pagando con Tarjetas de crédito y débito Bancolombia en los
+                    almacenes Alkosto, Ktronix y Alkomprar a nivel nacional. El descuento es directo en el precio y se
+                    hace efectivo en los puntos de pago, para compras realizadas por Internet el descuento se verá
+                    reflejado en el momento de seleccionar el medio de pago Tarjeta de Crédito Bancolombia, en compras
+                    virtuales no aplica tarjetas débito Bancolombia. Máximo dos unidades por referencia por
+                    tarjetahabiente. La disponibilidad de los productos depende del inventario que maneje cada almacén.
+                    No canjeable por efectivo. Este beneficio no es acumulable con otras ofertas, beneficios o
+                    promociones vigentes en los comercios al momento de la compra. La forma de entrega y costo de envío
+                    serán informados por Alkosto y/o Ktronix como se encuentra en las páginas web www.alkosto.com,
+                    www.ktronix.com. La calidad, idoneidad, seguridad y garantía de los productos y servicios ofrecidos
+                    son responsabilidad exclusiva de Alkosto, Ktronix y Alkomprar. Para aplicar al descuento se debe
+                    pagar la totalidad de la compra con Tarjetas de crédito y débito Bancolombia. Para compras por
+                    internet no aplican las ofertas de los productos que sean combos o Kasados. Consulte puntos de
+                    venta, términos y condiciones en www.alkosto.com y www.ktronix.com. BANCOLOMBIA S.A. sólo es el
+                    emisor de los medios de pago a través de los cuales se puede acceder a los beneficios mencionados.
+                    Los productos aquí descritos son ofrecidos por Alkosto, Ktronix y Alkomprar por lo tanto son ellos
+                    los responsables de la oferta, la venta, la entrega, el funcionamiento y la garantía de los mismos.
+                    Imágenes de referencia, el tamaño de las fotos no necesariamente representa el tamaño real del
+                    producto. Aplica a las Franquicias Visa, MasterCard y American Express emitidas por Bancolombia. Los
+                    Productos y Servicios Financieros son ofrecidos por Bancolombia quien liquidará las cuotas de
+                    acuerdo a la tasa que determine. Producto de crédito sujeto a reglamento. Aplica para tarjetas
+                    emitidas en Colombia.</span></div>
+        </div>
+
+
+        <div class="legal">
+            <div style="margin: 0px 5%; text-align: justify;"><span> Oferta valida el 28 Junio de 2019, pagando con
+                    Tarjetas de Cr&eacute;dito Banco de Bogot&aacute;, en los almacenes Alkosto, Ktronix a nivel
+                    nacional y en www.alkosto.com, www.ktronix.com. (No aplica en los almacenes del Departamento de
+                    Nari&ntilde;o). El descuento es directo en el precio y se hace efectivo en los puntos de pago, para
+                    las compras realizadas por Internet el descuento se ver&aacute; reflejado en el momento de
+                    seleccionar el medio de pago Tarjetas de Cr&eacute;dito Banco de Bogot&aacute;, seg&uacute;n
+                    corresponda la oferta. Para productos en oferta m&aacute;ximo dos unidades por referencia por
+                    tarjetahabiente. La disponibilidad de los productos depende del inventario que maneje cada
+                    almac&eacute;n. No canjeable por efectivo, no acumulable con otras ofertas. Para aplicar al
+                    descuento se debe pagar la totalidad de la compra con Tarjetas de Cr&eacute;dito Banco de
+                    Bogot&aacute;, seg&uacute;n corresponda la oferta. Para compras por internet no aplican las ofertas
+                    de los productos que sean combos o Kasados. La calidad, idoneidad, seguridad y garant&iacute;a de
+                    los productos y servicios ofrecidos son responsabilidad exclusiva del establecimiento de comercio.
+                    Consulte puntos de venta, t&eacute;rminos y condiciones en www.alkosto.com y www.ktronix.com. Los
+                    Productos y Servicios Financieros son ofrecidos por cada banco, quien liquidar&aacute; las cuotas de
+                    acuerdo a la tasa que determine, Los productos aqu&iacute; descritos son ofrecidos por Alkosto y
+                    Ktronix por lo tanto son ellos los responsables de la oferta, la venta, la entrega, el
+                    funcionamiento y la garant&iacute;a de los mismos. Im&aacute;genes de referencia, el tama&ntilde;o
+                    de las fotos no necesariamente representa el tama&ntilde;o real del producto. Las ofertas con bancos
+                    aplican para referencias seleccionadas con cada Banco seg&uacute;n corresponda la oferta. La
+                    informaci&oacute;n de precio, unidades, caracter&iacute;sticas y detalle del producto, se encuentra
+                    publicada en cada una de las referencias. Producto de cr&eacute;dito sujeto a reglamento. Aplica
+                    &uacute;nicamente para tarjetas de cr&eacute;dito emitidas en Colombia.</span></div>
+        </div>
+    </div>
+</div>
+<div class="desktop" style="width: 100%; background: #151515;">
+    <!--
+<p><a href="https://www.soyecolombiano.com/listado-de-campanas/reembolsale-al-planeta/"> </a></p>
+<div style="background: white;"><a href="https://www.soyecolombiano.com/listado-de-campanas/reembolsale-al-planeta/">
+<div style="width: 100%; max-width: 1920px; margin: auto;"><img src="https://www.alkosto.com/media/ALKOSTO/Especiales/AK-Banda-transportadora-Blanca-horiz.jpg" alt="" width="100%" /></div>
+</a></div>
+<p><a href="https://www.soyecolombiano.com/listado-de-campanas/reembolsale-al-planeta/"> </a></p>
+-->
+    <div class="footer">
+        <div class="footer-header" style="text-align: center;">
+            <div class="callcenter"><strong>VENTA TELEF&Oacute;NICA:</strong> Bogot&aacute;: <a
+                    href="tel:0313649734">(031) 364 9734</a> - L&iacute;nea Gratuita Nacional: <a
+                    href="tel:+018000180222">018000 180 222</a>&nbsp; | &nbsp; Email: <a
+                    href="mailto:sugerencias@ktronix.com">sugerencias@ktronix.com</a>&nbsp; | &nbsp; <a
+                    href=" {{store url=""}}contacts">Servicio al cliente:</a> <a href="tel:+0314073033">(031) 407
+                    3033</a></div>
+        </div>
+        <div class="footer-cols">
+            <ul>
+                <li>
+                    <h4>Nuestra Compa&ntilde;&iacute;a</h4>
+                    <ul>
+                        <li>
+                            <h5><a href=" {{store url=""}}quienes-somos">Qui&eacute;nes somos</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href=" {{store url=""}}nuestras-tiendas">Nuestras tiendas</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href="https://career19.sapsf.com/career?company=colombiana&amp;site=VjItRnhuMkZIVFNnOWZ0c1djNGhmTjlZdz09"
+                                    target="_blank">Trabaje con Nosotros</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href="http://certificados.corbeta.com.co" target="_blank">Certificados
+                                    tributarios</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href=" {{store url=""}}contactanos">Cont&aacute;ctenos</a></h5>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+            </ul>
+            <ul>
+                <li>
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li>
+                            <h5><a href=" {{store url=""}}servicios/instalacion-asesoria">Instalaciones</a></h5>
+                        </li>
+                        <li>
+                            <h5>Compras en l&iacute;nea</h5>
+                            <ul>
+                                <li>
+                                    <h6><a href=" {{store url=""}}ayuda">Ayuda</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href=" {{store url=""}}marcas">Marcas</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href=" {{store url=""}}seguridad">Seguridad</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href=" {{store url=""}}entrega">Entrega</a></h6>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>Pol&iacute;ticas</h4>
+                    <ul>
+                        <li>
+                            <h5><a href=" {{store url=""}}politica-cambios">Pol&iacute;ticas de cambio</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href=" {{store url=""}}customer/account/">Devuelve tu pedido</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href=" {{store url=""}}garantia">Garant&iacute;as y centros de servicio
+                                    t&eacute;cnico</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href=" {{store url=""}}politicas-privacidad">Pol&iacute;tica de privacidad</a></h5>
+                        </li>
+                        <li>
+                            <h5 class="no-display"><a href=" {{store url=""}}politica-tratamiento-informacion"
+                                    target="_blank">Pol&iacute;tica de tratamiento de la informaci&oacute;n sensible</a>
+                            </h5>
+                        </li>
+                        <li>
+                            <h5><a href=" {{store url=""}}terminos" target="_blank">T&eacute;rminos y condiciones</a>
+                            </h5>
+                        </li>
+                        <li>
+                            <h5><a href=" {{store url=""}}contrato" target="_blank">Contrato de compraventa en
+                                    l&iacute;nea</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href="http://www.sic.gov.co" target="_blank">Entidad de protecci&oacute;n al
+                                    consumidor www.sic.gov.co</a></h5>
+                        </li>
+                        <li>
+                            <h5><a href="https://crm.colcomercio.com.co/linea_etica/formulario_externo/index.php?unidad=7"
+                                    target="_blank">L&iacute;nea &Eacute;tica</a></h5>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>S&iacute;guenos</h4>
+                    <ul>
+                        <li>
+                            <h5 class="social-media facebook"><a href="https://www.facebook.com/ktronix"
+                                    target="_blank"> <img title="Facebook"
+                                        src="{{media url="ALKOSTO/alkosto-rwd/logo-facebook-footer.png"}}"
+                                        alt="Facebook" /> <span>Facebook</span> </a></h5>
+                        </li>
+                        <li>
+                            <h5 class="social-media twitter"><a href="https://www.twitter.com/ktronixcolombia"
+                                    target="_blank"> <img title="Twitter"
+                                        src="{{media url="ALKOSTO/alkosto-rwd/twitter-logo-footer.png"}}" alt="" />
+                                    <span>Twitter</span> </a></h5>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>{{block type="newsletter/subscribe" name="footer.newsletter" as="newsletter" template="newsletter/subscribe.phtml"}}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="br">&nbsp;</div>
+    <div class="mobile elementos-de-confianza-footer">
+        <ul>
+            <li> <span> <a class="call-center" href="tel:0313649734">Venta telef&oacute;nica: (031) 364 9734</a> </span>
+            </li>
+            <li> <span class="shipping">Env&iacute;o Gratis</span> </li>
+            <li> <span class="gana-la-mitad">Gana la mitad de tu compra</span> </li>
+        </ul>
+    </div>
+</div>
+<div class="mobile" style="background: #000;">
+    <div>
+        <div class="company">Colombiana de Comercio S.A. NIT 890.900.943-1&nbsp;</div>
+        <ul>
+            <li>
+                <h4>Suscr&iacute;bete</h4>
+                <ul>
+                    <li>{{block type="newsletter/subscribe" name="footer.newsletter" as="newsletter" template="newsletter/subscribe-m.phtml"}}
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>Cont&aacute;ctanos</h4>
+                <ul class="contacto-mb">
+                    <li>
+                        <h5><a href="tel:0313649734">Venta Telef&oacute;nica<span>(031) 364 9734</span></a></h5>
+                    </li>
+                    <li>
+                        <h5><a href="tel:0314073033">Servicio al Cliente<span>(031) 407 3033</span></a></h5>
+                    </li>
+                    <li>
+                        <h5>L&iacute;nea Gratuita Nacional:<span>018000 180 222</span></h5>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>S&iacute;guenos</h4>
+                <ul class="siguenos-mb">
+                    <li>
+                        <h5 class="social-media facebook"><a href="https://www.facebook.com/alkostohiperahorro"
+                                target="_blank"> <img title="Facebook"
+                                    src=" {{media url="ALKOSTO/alkosto-rwd/logo-facebook-footer.png"}}"
+                                    alt="Facebook" /> <span>Facebook</span> </a></h5>
+                    </li>
+                    <li>
+                        <h5 class="social-media twitter"><a href="https://twitter.com/Alkosto?lang=es" target="_blank">
+                                <img title="Twitter" src=" {{media url="ALKOSTO/alkosto-rwd/twitter-logo-footer.png"}}"
+                                    alt="Twitter" /> <span>Twitter</span> </a></h5>
+                    </li>
+                    <li>
+                        <h5 class="social-media youtube"><a href="https://www.youtube.com/user/AlkostoHiperAhorro"
+                                target="_blank"> <img title="Youtube"
+                                    src=" {{media url="ALKOSTO/alkosto-rwd/youtube.png"}}" alt="Youtube" />
+                                <span>YouTube</span> </a></h5>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4>Mapa del sitio</h4>
+                <div class="sitemap-mb">
+                    <ul>
+                        <li>
+                            <h4>Nuestra Compa&ntilde;&iacute;a</h4>
+                            <ul>
+                                <li>
+                                    <h5><a href=" {{store url=""}}quienes-somos">Qui&eacute;nes somos</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href=" {{store url=""}}tiendas">Nuestras tiendas</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href="https://career19.sapsf.com/career?company=colombiana&amp;site=VjItRnhuMkZIVFNnOWZ0c1djNGhmTjlZdz09"
+                                            target="_blank">Trabaje con nosotros</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href=" {{store url=""}}proveedores">Para proveedores</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href="http://certificados.corbeta.com.co" target="_blank">Certificados
+                                            tributarios</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href=" {{store url=""}}contacts">Cont&aacute;ctenos</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href="http://www.tarjetaalkosto.com.co" target="_blank">Tarjeta de
+                                            cr&eacute;dito Alkosto</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href="https://b2b.alkosto.com" target="_blank">Fondo de empleados, convenios
+                                            y cooperativas</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href=" {{store url=""}}garantia-extendida">Hipergarant&iacute;a</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href=" {{store url=""}}hiper-verde">Hiperverde</a></h5>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Servicios</h4>
+                            <ul>
+                                <li>
+                                    <h5><a href=" {{store url=""}}servicios/instalacion-asesoria">Instalaciones</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href="#">Compras en l&iacute;nea</a></h5>
+                                    <ul>
+                                        <li>
+                                            <h6><a href=" {{store url=""}}ayuda">Ayuda</a></h6>
+                                        </li>
+                                        <li>
+                                            <h6><a href=" {{store url=""}}marcas">Marcas</a></h6>
+                                        </li>
+                                        <li>
+                                            <h6><a href=" {{store url=""}}seguridad">Seguridad</a></h6>
+                                        </li>
+                                        <li>
+                                            <h6><a href=" {{store url=""}}entrega">Entrega</a></h6>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>Pol&iacute;ticas</h4>
+                            <ul class="politicas-mb">
+                                <li>
+                                    <h5><a href="{{store url=""}}politica-cambios">Pol&iacute;ticas de cambio</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href=" {{store url=""}}customer/account/">Devuelve tu pedido</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href=" {{store url=""}}garantia">Garant&iacute;as y centros de servicio
+                                            t&eacute;cnico</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href=" {{store url=""}}politicas-privacidad">Pol&iacute;tica de
+                                            privacidad</a></h5>
+                                </li>
+                                <li>
+                                    <h5 class="no-display"><a
+                                            href=" {{store url=""}}politica-tratamiento-informacion">Pol&iacute;tica de
+                                            tratamiento de la informaci&oacute;n sensible</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href=" {{store url=""}}terminos">T&eacute;rminos y condiciones</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href=" {{store url=""}}contrato">Contrato de compraventa en l&iacute;nea</a>
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5><a href="http://www.sic.gov.co" target="_blank">Entidad de protecci&oacute;n al
+                                            consumidor www.sic.gov.co</a></h5>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
